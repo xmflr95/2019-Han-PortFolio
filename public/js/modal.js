@@ -9,6 +9,9 @@ for (let i = 0; i < projectCount; i++) {
   modal.push(document.getElementsByClassName('modal')[i]);
 }
 
+
+// const m = document.getElementById('project1');
+// m.getElementsByTagName('img')[0]
 app.addEventListener('click', e => {
   if (e.target.tagName == "IMG") {
     let str = e.target.src;
@@ -32,6 +35,7 @@ app.addEventListener('click', e => {
       modal5.style.display = 'block';
       
     }
+  
   }
 
 });
@@ -52,35 +56,8 @@ let modal5 = document.getElementById('project-modal-5');
 
 let closeBtn1 = document.getElementsByClassName('closeBtn')[0];
 
-// Get open modal button
-// let modalBtn = [];
-// for (let i = 1; i <= projectCount; i++) {
-//   modalBtn.push(document.getElementById(`project${i}`));
-// }
-
-// Get close button
-// let closeBtn = [];
-// for (let i = 0; i < projectCount; i++) {
-//   closeBtn.push(document.getElementsByClassName('closeBtn')[i]);
-// }
-
-// Listen for open click
-// modalBtn.addEventListener('click', openModal);
-
-// Listen for close click
-// closeBtn1.addEventListener('click', closeModal(1));
-// closeBtn2.addEventListener('click', closeModal(2));
-// closeBtn3.addEventListener('click', closeModal(3));
-// closeBtn4.addEventListener('click', closeModal(4));
-// closeBtn5.addEventListener('click', closeModal(5));
-
 // Listen for Outside click
 window.addEventListener('click', outsideClick);
-
-// function to open modal
-// function openModal() {
-//   modal.style.display = 'block';
-// }
 
 // function to close modal
 function closeModal() {
@@ -89,18 +66,6 @@ function closeModal() {
   modal3.style.display = 'none';
   modal4.style.display = 'none';
   modal5.style.display = 'none';
-
-  // if (modalNum == 1) {
-  //   modal1.style.display = 'none';
-  // } else if (modalNum == 2) {
-  //   modal2.style.display = 'none';
-  // } else if (modalNum == 3) {
-  //   modal3.style.display = 'none';
-  // } else if (modalNum == 4) {
-  //   modal4.style.display = 'none';
-  // } else if (modalNum == 5) {
-  //   modal5.style.display = 'none';
-  // }
 }
 
 // function to close modal if outside click
