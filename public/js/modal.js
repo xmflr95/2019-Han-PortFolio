@@ -1,18 +1,16 @@
 // Get modal element
 const projectCount = 5;
 
-let app = document.getElementById('project-items');
+const app = document.getElementById('project-items');
 // let items = document.getElementsByClassName('project-item');
-let modalList = document.getElementById('modalList');
+const modalList = document.getElementById('modalList');
+
 let modal = [];
 for (let i = 0; i < projectCount; i++) {
   modal.push(document.getElementsByClassName('modal')[i]);
 }
 
-
-// const m = document.getElementById('project1');
-// m.getElementsByTagName('img')[0]
-app.addEventListener('click', e => {
+app.addEventListener('click', function(e) {
   if (e.target.tagName == "IMG") {
     let str = e.target.src;
     let value = str.slice(44, 45);
@@ -34,18 +32,14 @@ app.addEventListener('click', e => {
     } else if (value == 5) {
       modal5.style.display = 'block';
       
-    }
-  
+    } 
   }
-
 });
 
 modalList.addEventListener('click', e => {
   if (e.target.tagName == "SPAN") {
-    closeModal();    
+    closeModal();
   }
-
-  // console.log(e.target);
 });
 
 let modal1 = document.getElementById('project-modal-1');

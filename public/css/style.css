@@ -437,12 +437,13 @@ section#about .about-content #profile-skill-info {
 /* Project : 프로젝트 */
 
 section#project {
-  user-select: none;
+  /* user-select: none; */
   /* min-height: 1100px;
   max-height: 1100px; */
 }
 
 section#project h1 {
+  user-select: none;
   font-size: 2rem;
   margin: 2rem;
 }
@@ -457,6 +458,7 @@ section#project h1::before {
 } */
 
 section#project p {
+  user-select: none;
   font-size: 1.3rem;
   margin: .5rem .5rem 1rem .5rem;
 }
