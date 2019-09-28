@@ -10,30 +10,26 @@ for (let i = 0; i < projectCount; i++) {
   modal.push(document.getElementsByClassName('modal')[i]);
 }
 
-app.addEventListener('click', function(e) {
-  if (e.target.tagName == "IMG") {
-    let str = e.target.src;
-    let value = str.slice(44, 45);
-    // lastIndexOf(".") = 45
-    // console.log(value);
+const m1 = document.getElementsByClassName('project-item')[0];
+const m2 = document.getElementsByClassName('project-item')[1];
+const m3 = document.getElementsByClassName('project-item')[2];
+const m4 = document.getElementsByClassName('project-item')[3];
+const m5 = document.getElementsByClassName('project-item')[4];
 
-    if (value == 1) {
-      modal1.style.display = 'block';
-
-    } else if (value == 2) {
-      modal2.style.display = 'block';
-      
-    } else if (value == 3) {
-      modal3.style.display = 'block';
-      
-    } else if (value == 4) {
-      modal4.style.display = 'block';
-     
-    } else if (value == 5) {
-      modal5.style.display = 'block';
-      
-    } 
-  }
+m1.addEventListener('click', function() {
+  modal1.style.display = 'block';
+});
+m2.addEventListener('click', function() {
+  modal2.style.display = 'block';
+});
+m3.addEventListener('click', function() {
+  modal3.style.display = 'block';
+});
+m4.addEventListener('click', function() {
+  modal4.style.display = 'block';
+});
+m5.addEventListener('click', function() {
+  modal5.style.display = 'block';
 });
 
 modalList.addEventListener('click', e => {
