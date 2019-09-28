@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto|Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Poppins|Roboto|Ubuntu&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pertagebar.css">
+  <link rel="stylesheet" href="css/modalContent.css">
+  <link rel="stylesheet" href="css/contact.css">
+
+  <title>한창희's PortFolio</title>
+  
+</head>
+
+<body>
+  <div class="container">
+    <nav class="toggle-nav">
+      <ul class="navbar-toggle">
+        <li class="list"><a href="#home" class="cool-link">Home</a></li>
+        <li class="list"><a href="#about" class="cool-link">About</a></li>
+        <li class="list"><a href="#project" class="cool-link">Project</a></li>
+        <li class="list"><a href="#contact" class="cool-link">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="navbar">      
+      <h1 class="brand"><a href="/index3.html">Han's</a></h1>
+      <div class="navbar-toggler">
+        <i class="fas fa-bars"></i>        
+      </div>      
+      <ul>        
+        <li class="list"><a href="#home" class="cool-link">Home</a></li>
+        <li class="list"><a href="#about" class="cool-link">About</a></li>
+        <li class="list"><a href="#project" class="cool-link">Project</a></li>
+        <li class="list"><a href="#contact" class="cool-link">Contact</a></li>
+      </ul>
+    </nav>    
+    <!-- Home Section -->
+    <section id="home">
+      <div class="bg"></div>
+      <div class="home-content">
+        <h1 id="welcome">Welcome To My PortFolio</h1>
+        <p>I'm</p>
+        <h1 id="im">
+          <span class="txt-type" data-wait="3000" data-words='["ChangHui Han", "Student", "FullStack Developer", "Game Developer"]'></span>
+        </h1>
+        <a href="#contact" class="contact-btn">Contact Me</a>
+        <div class="contact-icons">
+          <a href="https://github.com/xmflr95" title="깃허브로 가기" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100005706750855" title="페이스북으로 가기" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+        </div>
+        <form action="/cEn" method="POST" class="ChangeLang">
+          <input type="submit" value="Change to English" id="changeLangTo">
+        </form>
+        <!-- <div class="ChangeLang">
+          <a href="/cEn" id="changeLangTo">Change to English</a>
+        </div> -->
+      </div>
+    </section>
+    <!-- /Home Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <h1>About Me</h1>
+      <!-- <h1>나에 대해서</h1> -->
+      <div class="about-container">
+        <div class="about-content" id="about-info">
+          <h1 id="profile-name" style="letter-spacing: .2rem;">한창희</h1>
+          <h3 id="birthHead">생일</h3>
+          <p id="birth">1995. 12. 22</p>
+          <h3 id="eduHead">교육</h3>
+          <!-- <p id="edu">Daegu University Majoring in Computer Software</p> -->
+          <p id="edu">대구대학교 컴퓨터 소프트웨어 전공</p>
+          <h3 class="content-head" id="pCareerHead">프로그래밍 경력</h3>
+          <p class="content-small" id="pCareerSmallHead">2014 ~ 2019</p>
+          <!-- <p class="content-body" id="pCareer">I studied computer and programming in college. -->
+          <p class="content-body" id="pCareer">나는 대학에서 컴퓨터와 프로그래밍을 공부했습니다.<br>지금은 바닐라 JS와 최신 JS 프레임워크들에 관심이 있습니다.</p>
+          <!-- <h3 class="content-head" id="webCourseHead">Web-Based Big Data Analytics Course</h3> -->
+          <h3 class="content-head" id="webCourseHead">웹기반 빅 데이터 분석 과정</h3>
+          <p class="content-small" id="webCourseSmallHead">2019.05 ~ 2019.07</p>
+          <!-- <p class="content-body" id="webCourse">Completed the web-based big data analysis process organized by the Korea Convergence Technology Promotion Agency(Java-based).</p> -->
+          <p class="content-body" id="webCourse">한국융합기술진흥원이 주관하는<br>웹 기반 빅데이터 분석 과정 완료.</p>
+          <a id="profile-down" type="download" href="doc/빅데이터분석과정수료증.pdf" target="_blank" title="수료증 보기">수료증 보기</a>
+        </div>
+        <div class="about-content" id="about-img">
+          <img id="profile-img" src="/img/icons/Han_512.png" alt="한창희 프로필 사진" title="한창희 프로필 사진">
+        </div>
+        <div class="about-content" id="about-skill">
+          <h2 id="profile-skill">프로그래밍 숙련도</h2>
+          <!-- <p id="profile-skill-info">JavaScript, HTML, CSS, Java, Unity, C# ...</p> -->
+          <div class="skills">
+            <li>
+              <h3>JavaScript</h3><span class="per">80%</span><span class="bar"><span class="JavaScript"></span></span>
+            </li>
+            <li>
+              <h3>HTML5</h3><span class="per">90%</span><span class="bar"><span class="HTML5"></span></span>
+            </li>
+            <li>
+              <h3>CSS3</h3><span class="per">65%</span><span class="bar"><span class="CSS3"></span></span>
+            </li>
+            <li>
+              <h3>Java</h3><span class="per">65%</span><span class="bar"><span class="Java"></span></span>
+            </li>
+            <li>
+              <h3>Unity</h3><span class="per">70%</span><span class="bar"><span class="Unity"></span></span>
+            </li>
+            <li>
+              <h3>C#</h3><span class="per">60%</span><span class="bar"><span class="CSharp"></span></span>
+            </li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /About Section -->
+
+    <!-- Project Section -->
+    <section id="project">
+      <h1>My Project</h1>
+      <!-- <h1>나의 프로젝트</h1> -->
+      <!-- <p>University, Personal, Contest Projects</p> -->
+      <p>대학, 개인, 공모전 프로젝트들</p>
+      <ul class="project-items" id="project-items">
+        <li class="project-item" id="project-item">
+          <div class="item-img" id="project1">
+            <img src="img/projectImg/project1.png" alt="에코프렌즈 메인화면 사진" title="에코프렌즈">
+          </div>
+        </li>
+        <li class="project-item" id="project-item">
+          <div class="item-img" id="project2">
+            <img src="img/projectImg/project2.png" alt="D.O.T 메인화면 사진" title="D.O.T">
+          </div>
+        </li>
+        <li class="project-item" id="project-item">
+          <div class="item-img" id="project3">
+            <img src="img/projectImg/project3.png" alt="SquareVSO 메인 사진" title="SquareVSO">
+          </div>
+        </li>
+        <li class="project-item" id="project-item">
+          <div class="item-img" id="project4">
+            <img src="img/projectImg/project4.png" alt="포트폴리오 연습 메인화면 사진" title="포트폴리오 디자인">
+          </div>
+        </li>
+        <li class="project-item" id="project-item">
+          <div class="item-img" id="project5">
+            <img src="img/projectImg/project5.png" alt="FrogWar 메인화면 사진" title="FrogWar">
+          </div>
+        </li>
+      </ul>
+      <!-- Modal -->
+      <ul id="modalList">
+        <div id="project-modal-1" class="modal">
+          <div class="modal-content">
+            <img src="img/projectImg/project1.png" alt="에코프렌즈 메인화면 사진" title="에코프렌즈">
+            <div class="modal-header" title="close">
+              <span class="closeBtn">&times;</span>
+            </div>
+            <div class="modal-body">
+              <h2>EcoFriends</h2>
+              <p class="project-skills">PHP, Apache, MySQL, JavaScript, GoogleMap</p>
+              <p class="project-content">전국 전기차 충전소 위치를 볼 수 있는 지도 사이트</p>
+              <a href="https://github.com/xmflr95/EcoFriends" class="project-btn" target="_blank" title="Go to GitHub"><i
+                  class="fab fa-github"></i> GitHub</a>
+              <a href="https://xmflr95.cafe24.com/" class="project-btn" target="_blank" title="Go to Site"><i
+                  class="fas fa-eye"></i>
+                Site</a>
+            </div>
+          </div>
+        </div>
+        <div id="project-modal-2" class="modal">
+          <div class="modal-content">
+            <img src="img/projectImg/project2.png" alt="D.O.T 메인화면 사진" title="D.O.T">
+            <div class="modal-header" title="close">
+              <span class="closeBtn">&times;</span>
+            </div>
+            <div class="modal-body">
+              <h2>D.O.T(Dream of Twenties)</h2>
+              <p class="project-skills">Node.js, Express, MongoDB</p>
+              <p class="project-content">Full Stack 포트폴리오 공유 사이트</p>
+              <a href="https://github.com/xmflr95/D.O.T" class="project-btn" target="_blank" title="Go to GitHub"><i
+                  class="fab fa-github"></i> GitHub</a>
+              <a href="https://portfolio-db-hk.herokuapp.com/" class="project-btn" target="_blank" title="Go to Site"><i
+                  class="fas fa-eye"></i> Site</a>
+            </div>
+          </div>
+        </div>
+        <div id="project-modal-3" class="modal">
+          <div class="modal-content">
+            <img src="img/projectImg/project3.png" alt="SquareVSO 메인 사진" title="SquareVSO">
+            <div class="modal-header" title="close">
+              <span class="closeBtn">&times;</span>
+            </div>
+            <div class="modal-body">
+              <h2>SquareVSO</h2>
+              <p class="project-skills">Unity, C#, Android</p>
+              <p class="project-content">2D 유니티 모바일 1인 개발 게임</p>
+              <a href="https://github.com/xmflr95/SquareVSO" class="project-btn" target="_blank" title="Go to GitHub"><i
+                  class="fab fa-github"></i> GitHub</a>
+              <a href="https://play.google.com/store/apps/details?id=com.H2Cgames.dotVSO&hl=ko" class="project-btn"
+                target="_blank" title="App Download"><i class="fas fa-download"></i> App download</a>
+            </div>
+          </div>
+        </div>
+        <!-- style="display:block" -->
+        <div id="project-modal-4" class="modal">
+          <div class="modal-content">
+            <img src="img/projectImg/project4.png" alt="포트폴리오 연습 메인화면 사진" title="포트폴리오 디자인">
+            <div class="modal-header" title="close">
+              <span class="closeBtn">&times;</span>
+            </div>
+            <div class="modal-body">
+              <h2>모던 포트폴리오</h2>
+              <p class="project-skills">HTML5, SCSS, JavaScript</p>
+              <p class="project-content">반응형 포트폴리오 웹 사이트, 웹 디자인 연습</p>
+              <a href="https://github.com/xmflr95/modern_portfolio" class="project-btn" target="_blank" title="Go to GitHub"><i
+                  class="fab fa-github"></i> GitHub</a>
+              <a href="https://xmflr95.github.io/modern_portfolio/" class="project-btn" target="_blank" title="Go to Site"><i
+                  class="fas fa-eye"></i> Site</a>
+            </div>
+          </div>
+        </div>
+        <div id="project-modal-5" class="modal">
+          <div class="modal-content">
+            <img src="img/projectImg/project5.png" alt="FrogWar 메인화면 사진" title="FrogWar">
+            <div class="modal-header" title="close">
+              <span class="closeBtn">&times;</span>
+            </div>
+            <div class="modal-body">
+              <h2>FrogWar</h2>
+              <p class="project-skills">Unity, C#, SteamVR</p>
+              <!-- <p class="project-content">3D Shooting Defense Games<br>Using the SteamVR Plug-In</p> -->
+              <p class="project-content">3D VR 슈팅 디펜스 게임<br>SteamVR Plug-In 사용</p>
+              <a href="https://github.com/khg6152450/Frog_war" class="project-btn" target="_blank" title="Go to GitHub"><i
+                  class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/khg6152450/Frog_war" class="project-btn" target="_blank" title="Go to Site"><i
+                  class="fas fa-eye"></i> Site</a>
+            </div>
+          </div>
+        </div>
+      </ul>      
+    </section>
+    <!-- /Project Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h1>Contact</h1>
+      <div class="contact-container">
+        <div class="contact-content" id="phone">
+          <h3>Phone</h3>
+          <p><i class="fas fa-phone-alt"></i> (+82)10 6723 1233</p>
+        </div>
+        <div class="contact-content" id="social">
+          <h3>Social Media</h3>
+          <a href="https://github.com/xmflr95" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100005706750855" target="_blank"><i
+              class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/xmflr95" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="contact-content" id="hEmail">
+          <h3>Email</h3>
+          <p><i class="fas fa-envelope"></i> xmflr95@gmail.com</p>
+          <p><i class="fas fa-envelope"></i> xmflr95@naver.com</p>
+        </div>              
+      </div>
+      <div class="contact-email">
+        <form onsubmit="formSubmit()" method="POST" enctype="text/plain"
+          name="mailForm">
+          <div class="contact-email-info">
+            <!-- <label for="name">Your Name *</label> -->
+            <label for="name">당신의 이름 *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="contact-email-info">
+            <!-- <label for="mail">Your Email *</label> -->
+            <label for="mail">당신의 Email *</label>
+            <input type="email" id="mail" name="mail" required>
+          </div>
+          <div class="contact-email-info">
+            <!-- <label for="msg" id="msgLabel">Your Message *</label> -->
+            <label for="msg" id="msgLabel">당신의 메시지 *</label>
+            <textarea id="msg" name="msg" required></textarea>
+          </div>
+          <div class="contact-email-info">
+            <!-- <input type="submit" value="Send Message" id="sendBtn"> -->
+            <input type="submit" value="메시지 보내기" id="sendBtn">
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- /Contact Section -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>@ All Right Reserved By <a href="#" target="_blank">한창희</a></p>
+    </div>
+    <!-- /Footer -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
+  </script>
+  <script src="/js/typeWriter.js"></script>
+  <script src="/js/scroll.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/menu.js"></script>
+  <script src="/js/mailMsg.js"></script>
+  
+</body>
+
+</html>

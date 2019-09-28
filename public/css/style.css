@@ -1,0 +1,1039 @@
+@font-face {
+  font-family: 'NanumGothic';
+  src: url(../font/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(../font/Poppins-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url(../font/Raleway-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../font/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'RobotoMono';
+  src: url(../font/RobotoMono-Regular.ttf) format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway, NanumGothic, sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  /* height: 100vh; */
+}
+
+.container {
+  width: 100%;
+  height: 100%;  
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1030;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  transition: .5s;
+  transition-timing-function: ease-out;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0 auto 0 0;
+}
+
+.navbar ul li {
+  /* flex: 0 0 auto; */
+  margin: 0 1rem;
+  padding: 1.2rem;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  user-select: none;
+  transition: .5s;
+}
+
+/* Logo Design */
+.navbar .brand {
+  margin: 1rem auto 1rem auto;
+}
+
+.navbar .brand a {
+  font-family: NanumGothic, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+/* Logo CSS End */
+
+/* Navbar Toggler */
+.navbar .navbar-toggler {
+  display: none;
+  font-size: 2rem;
+  margin: 0 2rem 0 0;
+  color: white;
+  cursor: pointer;
+}
+
+.toggle-nav {
+  display: none;
+  z-index: 1031;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Scroll toggleNav */
+.toggle-nav .navbar-toggle {
+  /* text-align: center; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-nav .navbar-toggle .list {
+  height: 20%;
+  list-style-type: none;
+}
+
+.toggle-nav .navbar-toggle .list:nth-child(1) {
+  margin-top: 10%;
+}
+
+.toggle-nav .navbar-toggle .list a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  user-select: none;
+  font-size: 2.5rem;
+  transition: .5s;
+}
+
+.toggle-nav .navbar-toggle .list a:hover {
+  font-size: 2.7em;
+  transition: .5s;
+}
+
+.navbar-toggle .list a:hover::after {
+  color: coral;
+}
+
+/* .toggle-nav.nav-scrolled {
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+/* /Navbar Toggler */
+
+/* Navbar Effect */
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width .3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.navbar .brand:hover {
+  cursor: pointer;
+}
+
+/* scrolled navbar */
+.navbar.nav-scrolled {
+  background-color: #fff;
+  transition: .8s;
+  box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
+}
+
+.navbar.nav-scrolled a {
+  color: #333;
+}
+
+.navbar.nav-scrolled .brand a {
+  color: coral;
+}
+
+.navbar.nav-scrolled .cool-link::after {
+  background: #333;
+}
+
+.navbar.nav-scrolled .navbar-toggler {
+  color: #333;
+}
+
+/* section css */
+/* Original Section CSS */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+  overflow-x: hidden;
+  /* border: 3px solid #333; */
+}
+
+/* Original Section End */
+/* Section Images */
+section#home .bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  /* 최소높이 */
+  min-height: 1000px;
+}
+
+/* home */
+section#home {
+  user-select: none;
+  z-index: 0;
+  background: url('../img/backgroundImg/homeBgImg.jpg') no-repeat center center/cover;
+  /* 최소높이 */
+  min-height: 1000px;
+}
+
+section#home .home-content {
+  color: #f4f4f4;
+  z-index: 2;
+}
+
+section#home .home-content h1#welcome {
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: .1rem;
+  margin: 1rem;
+}
+
+section#home .home-content p {
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: .1rem;
+}
+
+/* Type Writer */
+section#home .home-content h1 {
+  font-family: RobotoMono, sans-serif;
+  /* text-transform: uppercase; */
+  font-weight: 600;
+  font-size: 4.8rem;
+  letter-spacing: .2rem;
+  margin: 2rem;
+}
+
+/* Cursor pointer */
+section#home .home-content .txt-type>.txt {
+  border-right: 0.2rem solid rgb(255, 255, 255, 0.8);
+}
+
+section#home .home-content .contact-btn {
+  font-family: RobotoMono, sans-serif;
+  display: inline-block;
+  width: 200px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background-color: coral;
+  color: #fff;
+  border-radius: 3ch;
+  margin-top: 3rem;
+  box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
+}
+
+section#home .home-content .contact-icons {
+  margin-top: 2rem;
+  letter-spacing: 1.2rem;
+}
+
+section#home .home-content .contact-icons svg {
+  color: #fff;
+  font-size: 2.5rem;
+  transition: .5s;
+}
+
+section#home .home-content .contact-icons a:nth-child(1):hover svg {
+  transition: .5s;
+  color: yellow;
+}
+
+section#home .home-content .contact-icons a:nth-child(2):hover svg {
+  transition: .5s;
+  /* color: #4267b2; */
+  color: #4d78cf;
+}
+
+section#home .home-content .ChangeLang {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+section#home .home-content .ChangeLang #changeLangTo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: .5s;
+  background: none;
+  border: none;
+}
+
+section#home .home-content .ChangeLang #changeLangTo:hover {
+  text-decoration: underline;
+  color: coral;
+  transition: .5s;
+  cursor: pointer;
+}
+
+/* About : 내 프로필 */
+section#about {
+  user-select: none;
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 800px;
+  max-height: 800px;
+  /* padding-top: 70px; */
+}
+
+section#about h1 {
+  /* flex: 1 1 auto; */
+  font-size: 2rem;
+  margin: 2rem;
+}
+.about-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 1rem;
+}
+section#about .about-content {
+  width: 33%;
+  margin: 1rem;
+}
+
+section#about .about-content #profile-name {
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+section#about .about-content #birthHead {
+  font-size: 1rem;
+}
+
+section#about .about-content #birthHead,
+section#about .about-content #birth {
+  text-align: right;  
+}
+
+section#about .about-content #eduHead {
+  font-size: 1rem;
+}
+
+section#about .about-content #eduHead,
+section#about .about-content #edu {
+  text-align: right;
+}
+
+section#about .about-content .content-head {
+  font-size: 1rem;
+  text-align: right;
+}
+
+section#about .about-content .content-small {
+  font-size: .6rem;
+  text-align: right;
+}
+
+section#about .about-content .content-body {
+  text-align: right;
+}
+
+/* section#about .about-content #profile-info {
+  text-align: right;
+  margin: 1rem;
+} */
+
+section#about .about-content #profile-down {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-family: RobotoMono, sans-serif;
+  display: inline-block;
+  width: 180px;
+  height: 45px;
+  line-height: 45px;
+  font-size: .9rem;
+  text-decoration: none;
+  background-color: tomato;
+  color: #fff;
+  box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
+  float: right;
+}
+
+section#about .about-container #about-img {
+
+}
+
+section#about #profile-img {
+  /* width: 384px;
+  height: 384px; */
+  width: 100%;
+  /* height: 100%; */
+  border: 10px solid coral;
+  border-radius: 100%;
+}
+
+section#about .about-content #profile-skill {
+  text-align: left;
+  margin: 1rem;
+}
+
+section#about .about-content #profile-skill-info {
+  margin: 1rem;
+}
+
+
+/* Project : 프로젝트 */
+
+section#project {
+  user-select: none;
+  /* min-height: 1100px;
+  max-height: 1100px; */
+}
+
+section#project h1 {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+/* section#project h1::after,
+section#project h1::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  background: #333;
+} */
+
+section#project p {
+  font-size: 1.3rem;
+  margin: .5rem .5rem 1rem .5rem;
+}
+
+/* Project Image */
+section#project .project-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1rem;
+}
+
+section#project .project-items .project-item {
+  cursor: pointer;
+  list-style: none;
+}
+
+section#project .project-items .project-item .item-img{
+  /* display: inline; */
+  align-items: stretch;
+}
+
+/* Contact : Contact */
+section#contact {
+  /* background: url('img/img5.jpg') no-repeat center center/cover; */
+  /* min-height: 1100px; */
+}
+
+.footer {
+  background-color: #333;
+  width: 100%;
+  height: 100px;
+  /* height: 100vh; */
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.footer p a {
+  text-decoration: none;
+  color: coral;
+  transition: color .4s;
+  transition-timing-function: linear;
+}
+
+.footer p a:hover {
+  transition: color .4s;
+  text-decoration: underline;
+  color: azure;
+}
+
+/* Responsive Screen */
+
+/* avg SmartPhone */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Navbar */  
+  .navbar ul {
+    display: none;
+  }
+  .navbar .brand {
+    margin: 1rem auto 1rem 1rem;
+  }
+  .navbar .brand a {
+    font-size: 1.5rem;
+  }
+  .navbar .navbar-toggler {
+    display: block;
+  }
+  /* /Navbar */
+  /* Section Home */
+  section#home .bg {
+    min-height: 750px;
+  }
+  section#home {
+    min-height: 750px;
+  }
+  section#home .home-content h1#welcome {
+    font-size: 1.5rem;
+  }
+  section#home .home-content p {
+    font-size: 1.1rem;
+  }
+  section#home .home-content h1 {
+    font-size: 2.1rem;
+  }
+  section#home .home-content .ChangeLang {
+    margin-top: 1.5rem;
+  }
+  section#home .home-content .ChangeLang #changeLangTo {
+    font-size: 1rem;
+  }
+  /* /Section Home */
+  /* About : 내 프로필 */
+  section#about {
+    min-height: 1470px;
+    max-height: 1470px;
+  }
+  .about-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  section#about .about-content {
+    width: 100%;
+    margin: 1rem;
+  }
+  section#about .about-content #profile-name {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+  }
+  section#about .about-content #birthHead {
+    font-size: 1rem;
+  }
+  section#about .about-content #birthHead,
+  section#about .about-content #birth {
+    text-align: center;
+  }
+  section#about .about-content #eduHead {
+    font-size: 1rem;
+  }
+  section#about .about-content #eduHead,
+  section#about .about-content #edu {
+    text-align: center;
+  }
+  section#about .about-content .content-head {
+    font-size: 1rem;
+    text-align: center;
+  }
+  section#about .about-content .content-small {
+    font-size: .6rem;
+    text-align: center;
+  }
+  section#about .about-content .content-body {
+    font-size: 1rem;
+    text-align: center;
+  }
+  section#about .about-content #profile-down {
+    float: none;
+  }
+  section#about #profile-img {
+    width: 256px;
+    height: 256px;
+  }
+  section#about .about-content #profile-skill {
+    text-align: center;
+    margin: 1rem;
+  }
+  section#about .about-content .skills {
+    /* padding: 0 2rem 0 2rem; */
+  }
+  /* /About */
+  /* Project */
+  section#project {
+    height: 1700px;
+    min-height: 2100px;
+    /* max-height: 2100px; */
+  }
+  section#project .project-items {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: .5rem;
+  }
+
+  .project-item .item-img img {
+    width: 100%;
+  }
+  /* /Project */
+  /* Footer */
+  .footer {
+    height: 100px;
+    max-height: 100px;
+  }
+  .footer p {
+    font-size: .9rem;
+  }
+  /* /Footer */
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Navbar */
+  .navbar ul {
+    display: none;
+  }
+  .navbar .brand {
+    margin: 1rem auto 1rem 2rem;
+  }
+  .navbar .brand a {
+    font-size: 1.8rem;
+  }
+  .navbar .navbar-toggler {
+    display: block;
+  }
+  /* /Navbar */
+  /* Section Home */
+  .navbar .brand {
+    margin: 1rem auto 1rem 2rem;
+  }
+
+  .navbar .brand a {
+    font-size: 1.8rem;
+  }
+  section#home .bg {
+    min-height: 900px;
+  }
+  section#home {
+    min-height: 900px;
+  }
+  section#home .home-content h1#welcome {
+    font-size: 2rem;
+  }
+  section#home .home-content p {
+    font-size: 1.3rem;
+  }
+  section#home .home-content h1 {
+    font-size: 2.5rem;
+  }
+  section#home .home-content .ChangeLang {
+    margin-top: 1.8rem;
+  }
+  section#home .home-content .ChangeLang #changeLangTo {
+    font-size: 1.05rem;
+  }
+  /* /Section Home */
+  /* About : 내 프로필 */
+  section#about {
+    min-height: 1430px;
+    max-height: 1430px;
+  }
+  .about-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  section#about .about-content {
+    width: 100%;
+    margin: 1rem;
+  }
+  section#about #about-skill {
+    margin: 0 1rem 1rem 1rem;
+  }
+  section#about .about-content #profile-name {
+    text-align: center;
+    margin: .8rem;
+  }
+  section#about .about-content #birthHead {
+    font-size: 1rem;
+  }
+  section#about .about-content #birthHead,
+  section#about .about-content #birth {
+    text-align: center;
+  }
+  section#about .about-content #eduHead {
+    font-size: 1rem;
+  }
+  section#about .about-content #eduHead,
+  section#about .about-content #edu {
+    text-align: center;
+  }
+  section#about .about-content .content-head {
+    font-size: 1rem;
+    text-align: center;
+  }
+  section#about .about-content .content-small {
+    font-size: .6rem;
+    text-align: center;
+  }
+  section#about .about-content .content-body {
+    font-size: 1rem;
+    text-align: center;
+  }
+  section#about .about-content #profile-down {
+    float: none;
+  }
+  section#about #profile-img {
+    width: 256px;
+    height: 256px;
+  }
+  section#about .about-content #profile-skill {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  section#about .about-content .skills {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  /* /About */
+  /* Project */
+  section#project {
+    /* height: 1200px; */
+    min-height: 1050px;
+    max-height: 1050px
+  }
+
+  section#project .project-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .5rem;
+  }
+
+  .project-item .item-img img {
+    width: 90%;
+  }
+  /* /Project */
+  /* Footer */
+  .footer {
+    height: 10vh;
+    max-height: 100px;
+  }
+  .footer p {
+    font-size: 1rem;
+  }
+  /* /Footer */
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Navbar */
+  .navbar ul {
+    margin-right: 0;
+  }
+  /* /Navbar */
+  /* Section Home */
+  section#home .bg {
+    min-height: 950px;
+  }
+  section#home {
+    min-height: 950px;
+  }
+  section#home .home-content h1#welcome {
+    font-size: 2.2rem;
+  }
+  section#home .home-content h1 {
+    font-size: 3.4rem;
+  }
+  /* /Section Home */
+  /* About : 내 프로필 */
+  section#about {
+    min-height: 1450px;
+    max-height: 1450px;
+  }
+  .about-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  section#about .about-content {
+    width: 100%;
+    margin: 1rem;
+  }
+  section#about #about-skill {
+    margin: 0 1rem 1rem 1rem;
+  }
+  section#about .about-content #profile-name {
+    text-align: center;
+    margin: .9rem;
+  }
+  section#about .about-content #birthHead {
+    font-size: 1rem;
+  }
+  section#about .about-content #birthHead,
+  section#about .about-content #birth {
+    text-align: center;
+  }
+  section#about .about-content #eduHead {
+    font-size: 1rem;
+  }
+  section#about .about-content #eduHead,
+  section#about .about-content #edu {
+    text-align: center;
+  }
+  section#about .about-content .content-head {
+    font-size: 1rem;
+    text-align: center;
+  }
+  section#about .about-content .content-small {
+    font-size: .6rem;
+    text-align: center;
+  }
+  section#about .about-content .content-body {
+    font-size: 1rem;
+    text-align: center;
+  }
+  section#about .about-content #profile-down {
+    float: none;
+  }
+  section#about #profile-img {
+    width: 256px;
+    height: 256px;
+  }
+  section#about .about-content #profile-skill {
+    text-align: center;
+    margin: 1rem;
+  }
+  section#about .about-content .skills {
+    padding: 0 2rem 0 2rem;
+  }
+  /* /About */
+  /* Project */
+  /* Project */
+  section#project {
+    min-height: 1130px;
+    max-height: 1130px;
+  }
+  /* /Project */
+  section#project .project-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .7rem;
+  }
+  .project-item .item-img img {
+    width: 355px;
+  }
+  /* /Project */
+  
+  /* Footer */
+  .footer {
+    height: 10vh;
+    max-height: 80px;
+  }
+
+  .footer p {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  /* /Footer */
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Section Home */
+  section#home .bg {
+    min-height: 1000px;
+  }
+
+  section#home {
+    min-height: 1000px;
+  }
+  /* /Section Home */
+  /* About : 내 프로필 */
+  section#about {
+    min-height: 900px;
+    max-height: 900px;
+  }
+  section#about .about-container {
+    max-width: 1400px;
+    margin: 1rem;
+  }
+  section#about .about-content#about-img {
+    display: flex;    
+    align-items: center;
+  }
+  section#about #profile-img {
+    width: 320px;
+    height: 320px;
+  }
+  section#about .about-content#about-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-content#about-skill .skills {
+    margin: auto;
+    flex: 1 auto 0;
+  }
+
+  /* /About */
+  /* Project */
+  section#project {
+    min-height: 750px;
+    max-height: 750px;
+  }
+  .project-item .item-img img {
+    width: 300px;
+  }
+  /* /Project */
+  /* Footer */
+  .footer {
+    height: 10vh;
+    max-height: 110px;
+  }
+  /* /Footer */
+}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+  /* Section Home */
+  section#home .bg {
+    min-height: 1000px;
+  }
+  section#home {
+    min-height: 1000px;
+  }
+  /* /Section Home */
+  /* About : 내 프로필 */
+  section#about {
+    min-height: 870px;
+    max-height: 870px;
+  }
+  section#about .about-container {
+    max-width: 1400px;
+    margin: 1rem;
+  }
+  section#about .about-content#about-img {
+    display: flex;
+    align-items: center;
+  }
+  /* Project */
+  section#project {
+    min-height: 930px;
+    max-height: 930px;
+  }
+  .project-item .item-img img {
+    width: 364px;
+  }
+  /* /Project */
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1600px) and (max-width: 1999.98px) {
+  /* Section Home */
+  section#home .bg {
+    min-height: 1000px;
+  }
+
+  section#home {
+    min-height: 1000px;
+  }
+  /* /Section Home */
+  /* About : 내 프로필 */
+  section#about { 
+    min-height: 870px;
+    max-height: 870px;
+  }
+  section#about .about-container {
+    max-width: 1600px;
+    margin: 1rem;
+  }
+  /* /About */
+  /* Project */
+  section#project {
+    min-height: 1100px;
+    max-height: 1100px;
+  }
+  /* /Project */
+}
+
+@media (min-width: 2000px) {
+  /* Section Home */
+  section#home .bg {
+    min-height: 1000px;
+  }
+
+  section#home {
+    min-height: 1000px;
+  }
+
+  /* /Section Home */
+  /* About : 내 프로필 */
+  section#about {
+    min-height: 870px;
+    max-height: 870px;
+  }
+  section#about .about-container {
+    max-width: 1600px;
+    margin: 1rem;
+  }
+  section#about .about-container .about-content {
+    margin: 1rem;
+  }
+  /* /About */
+  /* Project */
+  section#project {
+    min-height: 1100px;
+    max-height: 1100px;
+  }
+  /* /Project */
+}
