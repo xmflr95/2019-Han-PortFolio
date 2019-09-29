@@ -1007,6 +1007,12 @@ section#contact {
     display: flex;
     align-items: center;
   }
+  section#about .about-content #pCareer {
+    max-width: 400px;
+  }
+  section#about .about-content #webCourse {
+    max-width: 400px;
+  }
   /* /About */
   /* Project */
   section#project {
@@ -1043,6 +1049,12 @@ section#contact {
   section#about .about-container .about-content {
     margin: 1rem;
   }
+  /* section#about .about-content #pCareer {
+    max-width: 400px;
+  } */
+  /* section#about .about-content #webCourse {
+    max-width: 450px;
+  } */
   /* /About */
   /* Project */
   section#project {
