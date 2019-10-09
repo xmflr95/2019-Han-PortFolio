@@ -20,6 +20,7 @@
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -35,23 +36,35 @@ body {
 
 .container {
   width: 100%;
-  height: 100%;  
+  height: 100%;
 }
 
 .navbar {
   position: fixed;
   top: 0;
   z-index: 1030;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 80px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 
 .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin: 0 auto 0 0;
@@ -68,7 +81,12 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
@@ -85,6 +103,7 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
 /* Logo CSS End */
 
 /* Navbar Toggler */
@@ -111,9 +130,18 @@ body {
 .toggle-nav .navbar-toggle {
   /* text-align: center; */
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -127,7 +155,7 @@ body {
 }
 
 .toggle-nav .navbar-toggle .list:nth-child(4) {
-  padding-bottom: 10%; 
+  padding-bottom: 30%;
 }
 
 .toggle-nav .navbar-toggle .list a {
@@ -135,13 +163,20 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   font-size: 2rem;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
 .toggle-nav .navbar-toggle .list a:hover {
   font-size: 2.7em;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
@@ -161,11 +196,15 @@ body {
   width: 0;
   height: 3px;
   background: #fff;
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
   transition: width .3s;
 }
 
 .cool-link:hover::after {
   width: 100%;
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
   transition: width .3s;
 }
 
@@ -176,7 +215,10 @@ body {
 /* scrolled navbar */
 .navbar.nav-scrolled {
   background-color: #fff;
+  -webkit-transition: .8s;
+  -o-transition: .8s;
   transition: .8s;
+  -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
 }
 
@@ -199,9 +241,18 @@ body {
 /* section css */
 /* Original Section CSS */
 section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   width: 100%;
@@ -225,6 +276,9 @@ section#home .bg {
 
 /* home */
 section#home {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   z-index: 0;
   background: url('../img/backgroundImg/homeBgImg.jpg') no-repeat center center/cover;
@@ -281,6 +335,7 @@ section#home .home-content .contact-btn {
   color: #fff;
   border-radius: 3ch;
   margin-top: 3rem;
+  -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
 }
 
@@ -292,15 +347,21 @@ section#home .home-content .contact-icons {
 section#home .home-content .contact-icons svg {
   color: #fff;
   font-size: 2.5rem;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
 section#home .home-content .contact-icons a:nth-child(1):hover svg {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
   color: yellow;
 }
 
 section#home .home-content .contact-icons a:nth-child(2):hover svg {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
   /* color: #4267b2; */
   color: #4d78cf;
@@ -315,6 +376,8 @@ section#home .home-content .ChangeLang #changeLangTo {
   text-decoration: none;
   color: white;
   font-size: 1.1rem;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
   background: none;
   border: none;
@@ -323,16 +386,30 @@ section#home .home-content .ChangeLang #changeLangTo {
 section#home .home-content .ChangeLang #changeLangTo:hover {
   text-decoration: underline;
   color: coral;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
   cursor: pointer;
 }
 
 /* About : 내 프로필 */
 section#about {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction:  column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 100vh;
   min-height: 800px;
@@ -345,13 +422,20 @@ section#about h1 {
   font-size: 2rem;
   margin: 2rem;
 }
+
 .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   margin: 1rem;
 }
+
 section#about .about-content {
   width: 33%;
   margin: 1rem;
@@ -368,7 +452,7 @@ section#about .about-content #birthHead {
 
 section#about .about-content #birthHead,
 section#about .about-content #birth {
-  text-align: right;  
+  text-align: right;
 }
 
 section#about .about-content #eduHead {
@@ -411,13 +495,12 @@ section#about .about-content #profile-down {
   text-decoration: none;
   background-color: tomato;
   color: #fff;
+  -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
   float: right;
 }
 
-section#about .about-container #about-img {
-
-}
+section#about .about-container #about-img {}
 
 section#about #profile-img {
   /* width: 384px;
@@ -447,6 +530,9 @@ section#project {
 }
 
 section#project h1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   font-size: 2rem;
   margin: 2rem;
@@ -462,6 +548,9 @@ section#project h1::before {
 } */
 
 section#project p {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   font-size: 1.3rem;
   margin: .5rem .5rem 1rem .5rem;
@@ -469,9 +558,13 @@ section#project p {
 
 /* Project Image */
 section#project .project-items {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   grid-gap: 1rem;
 }
@@ -481,8 +574,10 @@ section#project .project-items .project-item {
   list-style: none;
 }
 
-section#project .project-items .project-item .item-img{
+section#project .project-items .project-item .item-img {
   /* display: inline; */
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
 }
 
@@ -498,22 +593,36 @@ section#contact {
   height: 100px;
   /* height: 100vh; */
   min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
+
 .footer p {
   color: #fff;
   font-size: 1.2rem;
 }
+
 .footer p a {
   text-decoration: none;
   color: coral;
+  -webkit-transition: color .4s;
+  -o-transition: color .4s;
   transition: color .4s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
 
 .footer p a:hover {
+  -webkit-transition: color .4s;
+  -o-transition: color .4s;
   transition: color .4s;
   text-decoration: underline;
   color: azure;
@@ -525,101 +634,131 @@ section#contact {
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  /* Navbar */  
+
+  /* Navbar */
   .navbar ul {
     display: none;
   }
+
   .navbar .brand {
     margin: 1rem auto 1rem 1rem;
   }
+
   .navbar .brand a {
     font-size: 1.5rem;
   }
+
   .navbar .navbar-toggler {
     display: block;
   }
+
   /* /Navbar */
   /* Section Home */
   section#home .bg {
     min-height: 100vh;
   }
+
   section#home {
     min-height: 100vh;
   }
+
   section#home .home-content h1#welcome {
     font-size: 1.5rem;
   }
+
   section#home .home-content p {
     font-size: 1.1rem;
   }
+
   section#home .home-content h1 {
     font-size: 2.1rem;
   }
+
   section#home .home-content .ChangeLang {
     margin-top: 1.5rem;
   }
+
   section#home .home-content .ChangeLang #changeLangTo {
     font-size: 1rem;
   }
+
   /* /Section Home */
   /* About : 내 프로필 */
   section#about {
     min-height: 1540px;
     max-height: 1540px;
   }
+
   .about-container {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
+
   section#about .about-content {
     width: 100%;
     margin: 1rem;
   }
+
   section#about .about-content #profile-name {
     font-size: 1.5rem;
     text-align: center;
     margin: 1rem;
   }
+
   section#about .about-content #birthHead {
     font-size: 1rem;
   }
+
   section#about .about-content #birthHead,
   section#about .about-content #birth {
     text-align: center;
   }
+
   section#about .about-content #eduHead {
     font-size: 1rem;
   }
+
   section#about .about-content #eduHead,
   section#about .about-content #edu {
     text-align: center;
   }
+
   section#about .about-content .content-head {
     font-size: 1rem;
     text-align: center;
   }
+
   section#about .about-content .content-small {
     font-size: .6rem;
     text-align: center;
   }
+
   section#about .about-content .content-body {
     font-size: 1rem;
     text-align: center;
   }
+
   section#about .about-content #profile-down {
     float: none;
   }
+
   section#about #profile-img {
     width: 256px;
     height: 256px;
   }
+
   section#about .about-content #profile-skill {
     text-align: center;
     margin: 1rem;
   }
+
   section#about .about-content .skills {
     /* padding: 0 2rem 0 2rem; */
   }
+
   /* /About */
   /* Project */
   section#project {
@@ -627,7 +766,9 @@ section#contact {
     min-height: 2100px;
     /* max-height: 2100px; */
   }
+
   section#project .project-items {
+    -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: .5rem;
   }
@@ -635,33 +776,41 @@ section#contact {
   .project-item .item-img img {
     width: 100%;
   }
+
   /* /Project */
   /* Footer */
   .footer {
     height: 100px;
     max-height: 100px;
   }
+
   .footer p {
     font-size: .9rem;
   }
+
   /* /Footer */
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+
   /* Navbar */
   .navbar ul {
     display: none;
   }
+
   .navbar .brand {
     margin: 1rem auto 1rem 2rem;
   }
+
   .navbar .brand a {
     font-size: 1.8rem;
   }
+
   .navbar .navbar-toggler {
     display: block;
   }
+
   /* /Navbar */
   /* Section Home */
   .navbar .brand {
@@ -671,81 +820,106 @@ section#contact {
   .navbar .brand a {
     font-size: 1.8rem;
   }
+
   section#home .bg {
     min-height: 900px;
   }
+
   section#home {
     min-height: 900px;
   }
+
   section#home .home-content h1#welcome {
     font-size: 2rem;
   }
+
   section#home .home-content p {
     font-size: 1.3rem;
   }
+
   section#home .home-content h1 {
     font-size: 2.5rem;
   }
+
   section#home .home-content .ChangeLang {
     margin-top: 1.8rem;
   }
+
   section#home .home-content .ChangeLang #changeLangTo {
     font-size: 1.05rem;
   }
+
   /* /Section Home */
   /* About : 내 프로필 */
   section#about {
     min-height: 1430px;
     max-height: 1430px;
   }
+
   .about-container {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
+
   section#about .about-content {
     width: 100%;
     margin: 1rem;
   }
+
   section#about #about-skill {
     margin: 0 1rem 1rem 1rem;
   }
+
   section#about .about-content #profile-name {
     text-align: center;
     margin: .8rem;
   }
+
   section#about .about-content #birthHead {
     font-size: 1rem;
   }
+
   section#about .about-content #birthHead,
   section#about .about-content #birth {
     text-align: center;
   }
+
   section#about .about-content #eduHead {
     font-size: 1rem;
   }
+
   section#about .about-content #eduHead,
   section#about .about-content #edu {
     text-align: center;
   }
+
   section#about .about-content .content-head {
     font-size: 1rem;
     text-align: center;
   }
+
   section#about .about-content .content-small {
     font-size: .6rem;
     text-align: center;
   }
+
   section#about .about-content .content-body {
     font-size: 1rem;
     text-align: center;
   }
+
   section#about .about-content #profile-down {
     float: none;
   }
+
   section#about #profile-img {
     width: 256px;
     height: 256px;
   }
+
   section#about .about-content #profile-skill {
     text-align: center;
     margin: 1rem;
@@ -754,6 +928,7 @@ section#contact {
   section#about .about-content .skills {
     padding: 0 1.5rem 0 1.5rem;
   }
+
   /* /About */
   /* Project */
   section#project {
@@ -763,6 +938,7 @@ section#contact {
   }
 
   section#project .project-items {
+    -ms-grid-columns: 1fr .5rem 1fr;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .5rem;
   }
@@ -770,99 +946,127 @@ section#contact {
   .project-item .item-img img {
     width: 90%;
   }
+
   /* /Project */
   /* Footer */
   .footer {
     height: 10vh;
     max-height: 100px;
   }
+
   .footer p {
     font-size: 1rem;
   }
+
   /* /Footer */
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
   /* Navbar */
   .navbar ul {
     margin-right: 0;
   }
+
   /* /Navbar */
   /* Section Home */
   section#home .bg {
     min-height: 950px;
   }
+
   section#home {
     min-height: 950px;
   }
+
   section#home .home-content h1#welcome {
     font-size: 2.2rem;
   }
+
   section#home .home-content h1 {
     font-size: 3.4rem;
   }
+
   /* /Section Home */
   /* About : 내 프로필 */
   section#about {
     min-height: 1450px;
     max-height: 1450px;
   }
+
   .about-container {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
+
   section#about .about-content {
     width: 100%;
     margin: 1rem;
   }
+
   section#about #about-skill {
     margin: 0 1rem 1rem 1rem;
   }
+
   section#about .about-content #profile-name {
     text-align: center;
     margin: .9rem;
   }
+
   section#about .about-content #birthHead {
     font-size: 1rem;
   }
+
   section#about .about-content #birthHead,
   section#about .about-content #birth {
     text-align: center;
   }
+
   section#about .about-content #eduHead {
     font-size: 1rem;
   }
+
   section#about .about-content #eduHead,
   section#about .about-content #edu {
     text-align: center;
   }
+
   section#about .about-content .content-head {
     font-size: 1rem;
     text-align: center;
   }
+
   section#about .about-content .content-small {
     font-size: .6rem;
     text-align: center;
   }
+
   section#about .about-content .content-body {
     font-size: 1rem;
     text-align: center;
   }
+
   section#about .about-content #profile-down {
     float: none;
   }
+
   section#about #profile-img {
     width: 256px;
     height: 256px;
   }
+
   section#about .about-content #profile-skill {
     text-align: center;
     margin: 1rem;
   }
+
   section#about .about-content .skills {
     padding: 0 2rem 0 2rem;
   }
+
   /* /About */
   /* Project */
   /* Project */
@@ -870,16 +1074,20 @@ section#contact {
     min-height: 1130px;
     max-height: 1130px;
   }
+
   /* /Project */
   section#project .project-items {
+    -ms-grid-columns: 1fr .7rem 1fr;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .7rem;
   }
+
   .project-item .item-img img {
     width: 355px;
   }
+
   /* /Project */
-  
+
   /* Footer */
   .footer {
     height: 10vh;
@@ -890,11 +1098,13 @@ section#contact {
     color: #fff;
     font-size: 1.1rem;
   }
+
   /* /Footer */
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
   /* Section Home */
   section#home .bg {
     min-height: 1000px;
@@ -903,32 +1113,50 @@ section#contact {
   section#home {
     min-height: 1000px;
   }
+
   /* /Section Home */
   /* About : 내 프로필 */
   section#about {
     min-height: 900px;
     max-height: 900px;
   }
+
   section#about .about-container {
     max-width: 1400px;
     margin: 1rem;
   }
+
   section#about .about-content#about-img {
-    display: flex;    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
+
   section#about #profile-img {
     width: 320px;
     height: 320px;
   }
+
   section#about .about-content#about-skill {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
   .about-content#about-skill .skills {
     margin: auto;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 auto 0px;
     flex: 1 auto 0;
   }
 
@@ -938,53 +1166,69 @@ section#contact {
     min-height: 750px;
     max-height: 750px;
   }
+
   .project-item .item-img img {
     width: 300px;
   }
+
   /* /Project */
   /* Footer */
   .footer {
     height: 10vh;
     max-height: 110px;
   }
+
   /* /Footer */
 }
 
 @media (min-width: 1200px) and (max-width: 1599.98px) {
+
   /* Section Home */
   section#home .bg {
     min-height: 1000px;
   }
+
   section#home {
     min-height: 1000px;
   }
+
   /* /Section Home */
   /* About : 내 프로필 */
   section#about {
     min-height: 870px;
     max-height: 870px;
   }
+
   section#about .about-container {
     max-width: 1400px;
     margin: 1rem;
   }
+
   section#about .about-content#about-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
+
   /* Project */
   section#project {
     min-height: 930px;
     max-height: 930px;
   }
+
   .project-item .item-img img {
     width: 364px;
   }
+
   /* /Project */
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1600px) and (max-width: 1999.98px) {
+
   /* Section Home */
   section#home .bg {
     min-height: 1000px;
@@ -993,36 +1237,48 @@ section#contact {
   section#home {
     min-height: 1000px;
   }
+
   /* /Section Home */
   /* About : 내 프로필 */
-  section#about { 
+  section#about {
     min-height: 870px;
     max-height: 870px;
   }
+
   section#about .about-container {
     max-width: 1400px;
     margin: 1rem;
   }
+
   section#about .about-content#about-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
+
   section#about .about-content #pCareer {
     max-width: 400px;
   }
+
   section#about .about-content #webCourse {
     max-width: 400px;
   }
+
   /* /About */
   /* Project */
   section#project {
     min-height: 1100px;
     max-height: 1100px;
   }
+
   /* /Project */
 }
 
 @media (min-width: 2000px) {
+
   /* Section Home */
   section#home .bg {
     min-height: 1000px;
@@ -1038,17 +1294,25 @@ section#contact {
     min-height: 870px;
     max-height: 870px;
   }
+
   section#about .about-container {
     max-width: 1400px;
     margin: 1rem;
   }
+
   section#about .about-content#about-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
+
   section#about .about-container .about-content {
     margin: 1rem;
   }
+
   /* section#about .about-content #pCareer {
     max-width: 400px;
   } */
@@ -1061,5 +1325,6 @@ section#contact {
     min-height: 1100px;
     max-height: 1100px;
   }
+
   /* /Project */
 }

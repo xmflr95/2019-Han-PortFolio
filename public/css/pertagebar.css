@@ -22,7 +22,8 @@ section#about .about-content .skills {
   height: 10px;
   border: 1px solid rgba(238, 234, 30, 0.178);
   border-radius: 3px;
-  overflow: hidden; 
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px #e73f2191;
   box-shadow: 0 0 10px #e73f2191;
 }
 
@@ -34,78 +35,155 @@ section#about .about-content .skills {
 
 .JavaScript {
   width: 80%;
+  -webkit-animation: javascript 2s;
   animation: javascript 2s;
 }
 
 .HTML5 {
   width: 90%;
+  -webkit-animation: html 2s;
   animation: html 2s;
 }
 
 .CSS3 {
   width: 65%;
+  -webkit-animation: css 2s;
   animation: css 2s;
 }
 
 .Java {
   width: 65%;
+  -webkit-animation: java 2s;
   animation: java 2s;
 }
 
 .Unity {
   width: 70%;
+  -webkit-animation: unity 2s;
   animation: unity 2s;
 }
 
 .CSharp {
   width: 60%;
+  -webkit-animation: csharp 2s;
   animation: csharp 2s;
+}
+
+@-webkit-keyframes javascript {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
 }
 
 @keyframes javascript {
   0% {
     width: 0%;
   }
+
   100% {
     width: 80%;
   }
 }
-@keyframes html {
+
+@-webkit-keyframes html {
   0% {
     width: 0%;
   }
+
   100% {
     width: 90%;
   }
 }
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes css {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
+
 @keyframes css {
   0% {
     width: 0%;
   }
+
   100% {
     width: 65%;
   }
 }
+
+@-webkit-keyframes java {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
+
 @keyframes java {
   0% {
     width: 0%;
   }
+
   100% {
     width: 65%;
   }
 }
-@keyframes unity {
+
+@-webkit-keyframes unity {
   0% {
     width: 0%;
   }
+
   100% {
     width: 70%;
   }
 }
+
+@keyframes unity {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes csharp {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
 @keyframes csharp {
   0% {
     width: 0%;
   }
+
   100% {
     width: 60%;
   }
